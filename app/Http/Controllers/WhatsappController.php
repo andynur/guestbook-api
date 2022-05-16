@@ -30,8 +30,9 @@ class WhatsappController extends Controller
      */
     public function template(): JsonResponse
     {
+        $template = $this->template->first();
         $data = [
-            'template' => $this->template->first(),
+            'template' => $template->message,
             'histories' => $this->whatsapps->all(),
         ];
 

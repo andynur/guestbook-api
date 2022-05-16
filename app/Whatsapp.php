@@ -14,7 +14,7 @@ class Whatsapp extends Model
      */
     protected $guarded = [];
 
-    protected $hidden = ['updated_at'];
+    protected $hidden = ['message', 'updated_at'];
 
     /**
      * Get the created at formatted.
