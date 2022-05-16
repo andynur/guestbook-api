@@ -52,3 +52,10 @@ $router->group(['prefix' => 'congrats'], function ($router) {
     $router->get('/', 'CongratController@index');
     $router->post('/', 'CongratController@store');
 });
+
+// Whatsapp
+$router->group(['prefix' => 'wa'], function ($router) {
+    $router->get('/template', 'WhatsappController@template');
+    $router->post('/template', 'WhatsappController@templateUpdate');
+    $router->post('/send', 'WhatsappController@send');
+});

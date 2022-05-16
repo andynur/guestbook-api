@@ -5,7 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
-class Congrat extends Model
+class Whatsapp extends Model
 {
     /**
      * The attributes that aren't mass assignable.
