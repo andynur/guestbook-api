@@ -27,7 +27,7 @@ class CongratController extends Controller
      */
     public function index(): JsonResponse
     {
-        $congrats = $this->congrats->all();
+        $congrats = $this->congrats->orderBy('id', 'desc')->get();
 
         return response()->json($congrats, Response::HTTP_OK);
     }
